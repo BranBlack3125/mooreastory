@@ -25,17 +25,17 @@ body {
 h1 {
     margin-top: 15%;
     font-family: 'Alegreya', serif;
-    color: rgba(230, 0, 230, 0.8);
-    font-size:  30px;
-    text-shadow: 0 0 6px rgba(255, 255, 255, .95);
+    color: rgba(230, 0, 230, 1);
+    font-size:  40px;
+    text-shadow: 0 0 12px rgba(244, 212, 66, 1);
 }
 
 h2 {
     margin-top: 10%;
     font-family: 'Alegreya', serif;
-    color: rgba(230, 0, 230, 0.8);
-    font-size: 20px;
-    text-shadow: 0 0 3px rgba(255, 255, 255, .95);
+    color: rgba(230, 0, 230, 1);
+    font-size: 25px;
+    text-shadow: 0 0 6px rgba(244, 212, 66, 1);
 }
 
 h3 {
@@ -47,9 +47,10 @@ h3 {
 }
 
 p {
+    margin-top: 7%;
     font-family: Dosis;
     color: rgba(19, 17, 116, 1);
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .storymap-trigger {
