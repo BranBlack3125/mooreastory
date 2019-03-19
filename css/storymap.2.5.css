@@ -24,18 +24,18 @@ body {
 
 h1 {
     margin-top: 15%;
-    font-family: 'Alegreya', serif;
-    color: rgba(230, 0, 230, 1);
-    font-size:  40px;
-    text-shadow: 0 0 12px rgba(244, 212, 66, 1);
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: rgba(210, 53, 224, 1);
+    font-size:  60px;
+    text-shadow: 0 3px 12px rgba(30, 204, 204, 1);
 }
 
 h2 {
-    margin-top: 10%;
-    font-family: 'Alegreya', serif;
-    color: rgba(230, 0, 230, 1);
-    font-size: 25px;
-    text-shadow: 0 0 6px rgba(244, 212, 66, 1);
+    margin-top: 5%;
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: rgba(210, 52, 224, 1);
+    font-size: 35px;
+    text-shadow: 0 3px 12px rgba(26, 116, 132, 1);
 }
 
 h3 {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Mo'orea Coral</title>
+    <title>Mo'orea Coral Reefs</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,6 +25,7 @@
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/storymap.2.5.css"><!--check filepath***>
@@ -61,14 +62,14 @@
 
             <section data-scene="overview" data-background="assets/aerialShot.png">
                 <div class="fullscreen text-center">
-                    <h1 class= >Mo'orea: Tour of Onshore Nutrient Sources</h1>
-                    <h2 class= >How do inorganic nutrients impact the health of Mo'orea's coral reef system?</h2>
+                    <h1 style = "color: rgba(193, 106, 25, 1); font-size: 80px;text-shadow: 6px 6px 12px rgba(40, 24, 112, 1)" >Mo'orea: Tour of Nutrient Sources</h1>
+                    <h2 style = "color: rgba(193, 106, 25, 1); font-size: 45px;text-shadow: 6px 6px 12px rgba(40, 24, 112, 1)" >How do inorganic nutrients impact the health of Mo'orea's coral reef system?</h2>
                     </large>
                 </div>
             </section>
 
             <section data-scene="moorea">
-                <h2>Mo'orea</h2>
+                <h2>Mo'orea's Setting</h2>
                 <p>Located in the Society Islands of French Polynesia, Mo'orea lies about 12 miles northwest of Tahiti.</p>
                 <p>The coral reefs surrounding the island hold tremendous biological and cultural significance to Mo'oreans.</p>
                 <img src="assets/blueCoast.jpg" class="img-responsive img-thumbnail" alt="responsive image"
@@ -87,8 +88,8 @@
 
             <section data-scene="sedsource" data-background="assets/ridgemos.png">
                 <div class="fullscreen text-center">
-                    <h1 class= >Mo'orea: Terrestrial Inorganic Nutrient Sources</h1>
-                    <h2 class= >How do nutrients make their way into Mo'orea's coral reefs?</h2>
+                    <h1 style = "color: rgba(226, 72, 198, 1); ; font-size: 65px;text-shadow: 0 3px 12px rgba(16, 22, 114, 1)" >Mo'orea: Terrestrial Inorganic Nutrient Sources</h1>
+                    <h2 style = "color: rgba(226, 72, 198, 1); font-size: 43px; text-shadow: 0 3px 12px rgba(16, 22, 114, 1)" >How do nutrients make their way into Mo'orea's coral reefs?</h2>
                     </large>
                 </div>
             </section>
@@ -125,10 +126,10 @@
                 <p>Sediments from steep ridgelines have only a short distance to travel before they make their way into the ocean.</p>
             </section>
 
-            <section data-scene="resolutions" data-background="assets/sunset.jpg">
+            <section data-scene="resolutions" data-background="assets/sunsetglow.png">
                 <div class="fullscreen text-center">
                     <h1 class= >Tracking Offshore Nutrient Sources and Concentrations</h1>
-                    <h2 class= >Practical approaches.</h2>
+                    <h2 style = "font-size: 45px;" >Practical approaches</h2>
                     </large>
                 </div>
             </section>
@@ -153,6 +154,12 @@
             </section>
 
             <section data-scene="end" data-background="../../assets/fishglow.png">
+                <div class="fullscreen text-center">
+                    <h1 class="display-4 d-flex justify-content-center">Thank you for your interest.</h1>
+                </div>
+            </section>
+
+            <section data-scene="end2" data-background="../../assets/fishglow.png">
                 <div class="fullscreen text-center">
                     <h1 class="display-4 d-flex justify-content-center">Thank you for your interest.</h1>
                 </div>
@@ -214,7 +221,7 @@
 
     // Create Legend Contents in html format
     var LTER_legend = '<i style="background: blue; opacity: 0.5"></i><p><b>Sample LTER Sites</b></p>';
-    var channels_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Sample LTER Sites</b></p>';
+    var channels_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Modified Channels</b></p>';
 
     var layers = {
         ESRI: {layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')},
@@ -258,7 +265,8 @@
         resolutions: {lat: -17.487378, lng: -149.894747, zoom: 16, name: 'Coral Passages', layers: [layers.satellite, layers.channels]},
         classification: {lat: -17.536719, lng: -149.834311, zoom: 13, name: 'Moorea LTER', layers: [layers.satellite]},
         coralPassages: {lat: -17.487378, lng: -149.894747, zoom: 16, name: 'Coral Passages', layers: [layers.satellite, layers.channels]},
-        end: {lat: -17.536719, lng: -149.834311, zoom: 13, zoom: 13, name: 'The End', layers: [layers.watercolor]}
+        end: {lat: -17.536719, lng: -149.834311, zoom: 13, zoom: 13, name: 'The End', layers: [layers.watercolor]},
+        end2: {lat: -17.536719, lng: -149.834311, zoom: 13, zoom: 13, name: 'The End', layers: [layers.watercolor]}
     };
 
     $('#storymap').storymap({
@@ -280,7 +288,7 @@
 
             //add an miniglobe
             new L.Control.GlobeMiniMap({
-                marker: 'blue',
+                marker: 'teal',
                 position: 'bottomright'
             }).addTo(map);
             return map;
