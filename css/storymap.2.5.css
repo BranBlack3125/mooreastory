@@ -34,7 +34,7 @@ h2 {
     margin-top: 5%;
     font-family: 'ZCOOL XiaoWei', serif;
     color: rgba(210, 52, 224, 1);
-    font-size: 35px;
+    font-size: 45px;
     text-shadow: 0 3px 12px rgba(26, 116, 132, 1);
 }
 
@@ -47,10 +47,10 @@ h3 {
 }
 
 p {
-    margin-top: 7%;
+    margin-top: 5%;
     font-family: Dosis;
     color: rgba(19, 17, 116, 1);
-    font-size: 15px;
+    font-size: 22px;
 }
 
 .storymap-trigger {
